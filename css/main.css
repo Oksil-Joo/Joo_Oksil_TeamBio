@@ -1,29 +1,121 @@
+@charset "UTF-8";
+
 .hidden {
   display: none; }
-img {
-max-width: 100%; }
 
-html{
-  box-sizing: border-box;
-}
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
 
 body {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   font-size: 16px;
   color: #fff;
-  background-image: url(../images/bg_dynamic.jpg);
+  background-image: url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
   padding: 0px;
+  background-color: black;
 }
-a {
-  text-decoration: none;
-  transition: all .1s linear;
+main {
+	text-align:center;
+	top:30px;
+}
+
+
+h1 {
+  font-weight: bold;
+	color:white;
+	margin-top:30px;
+	font-size:34px;
+  line-height: 1.2;
+}
+#imageContainer {
+	max-width: 500px;
+	height: 237px;
+	margin: 0 auto;
+	overflow: hidden;
+  /* border-radius: 50px; */
+  /* margin-top: 50px; */
+}
+.scaleUp {
+  -moz-transform:scale(1.7, 1.7);
+  -webkit-transform:scale(1.7, 1.7);
+  transform:scale(1.7, 1.7);
+}
+
+#houseImages {
+	position: relative;
+	width: 1000px;
+	transition: all .5s;
+}
+#houseImages img { float: left;}
+.content {
+  margin: 0 auto;
+}
+.sigilContainer {
+  width: 65px;
+  height: 65px;
+  margin-top: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0px solid;
+  overflow: hidden;
+  background-image: url(../images/bt_balla.jpg);
+  background-repeat: no-repeat;
+  transition: transform .3s;
+  -webkit-transition:-webkit-transform .3s;
+	-moz-transition:-moz-transform .3s;
+}
+
+.design {
+  background-position: 0px -65px;
+}
+.design:hover {
+  background-position: 0px 0px;
+}
+
+.develop {
+  background-position: -65px -65px;
+}
+.develop:hover{
+  background-position: -65px 0px;
+}
+
+#bottomNav { margin-top:30px; }
+.house-info{
+  color: white;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+#navList li {
+	display:inline;
+	list-style-type:none;
+	padding:0px 10px;
+	cursor:pointer;
+}
+
+
+@media screen and (min-width:500px) {
+
+  #container {
+    display:grid;
+grid-template-columns: repeat(12, minmax(0,1fr));
+grid-column-gap: 15px;
+margin-top: 100px;
+  }
+
+  .imageBox {
+    grid-column: 1/12;
+    padding-top: 50px;
+  }
+
+  .content {
+    grid-column: 4/9;
+  }
+
+
 }
