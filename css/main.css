@@ -1,0 +1,29 @@
+.hidden {
+  display: none; }
+img {
+max-width: 100%; }
+
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-image: url(../images/bg_dynamic.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  transition: all .1s linear;
+}
